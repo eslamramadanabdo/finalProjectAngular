@@ -1,0 +1,27 @@
+
+
+<h1 class="text-center m-auto my-5 text-primary" >List Student Page </h1>
+
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-body">
+        <table class="table table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Cource</th>
+                <th colspan="2">Action</th>
+            </tr>
+
+            <tr *ngFor = "let Student of alldata" >
+                <td>{{Student.id}}</td>
+                <td>{{Student.name}}</td>
+                <td>{{Student.level}}</td>
+                <td><button (click)="delete(Student.id)" class="btn btn-danger">Delete</button></td>
+                <td><a routerLink="/ls/{{Student.id}}"  class="btn btn-info">Update</a></td>
+            </tr>
+        </table>
+        
+        </div>
+    </div>
+</div>

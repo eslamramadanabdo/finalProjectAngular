@@ -1,0 +1,21 @@
+
+
+<h1 class="text-center m-auto my-5 text-primary" >Add Teacher Page </h1>
+
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label>Teacher Name</label>
+                <input type="text"  class="form-control" [(ngModel)] = "dataObject.name">
+            </div>
+
+            <div class="form-group">
+                <label>Teacher Cource</label>
+                <input type="text" class="form-control" [(ngModel)] = "dataObject.cource">
+            </div>
+
+            <button (click)="save()"  class="btn btn-info btn-block w-50 mx-auto">Send</button>
+        </div>
+    </div>
+</div>
